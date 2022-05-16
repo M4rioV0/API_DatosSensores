@@ -1,0 +1,8 @@
+#maquina virtual de python
+/venv
+#archivo de prueba 
+/prueba.py
+#datos
+/API_prueba/data
+#archivo de proecto
+/.vscode
