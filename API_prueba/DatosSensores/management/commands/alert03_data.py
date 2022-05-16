@@ -18,7 +18,7 @@ class Command(BaseCommand):
 
         for linea in json_:
 
-            avg03 = linea["advice"]
+            avg03 = linea["avg03"]
             idStation = linea["idStation"]
             subtype = linea["subtype"]
             timestamp = linea["timestamp"]
