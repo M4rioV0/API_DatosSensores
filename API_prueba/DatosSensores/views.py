@@ -1,3 +1,4 @@
+from multiprocessing import context
 from re import A
 from django.db.models import Q, Count
 from django.shortcuts import render, get_object_or_404
@@ -8,6 +9,10 @@ from .models import Advice
 #--METODO PARA VALIDAR LOS DATOS--#
 def is_valid_queryparam(param):
     return param != '' and param is not None
+
+#--VISTA DEL INICIO--#
+def HomeView(request):
+    return render(request, "home.html")
 
 #--QUERY DE LOS DATOS DE ADVICE--#
 

@@ -17,10 +17,10 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path,include
-from DatosSensores.views import AdviceFilterView
+from DatosSensores.views import HomeView
 
 urlpatterns = [
-    path('AdviceFilter/',AdviceFilterView, name='bootstrap'),
+    path('home/',HomeView, name='home'),
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
 ]
