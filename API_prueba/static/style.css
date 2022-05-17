@@ -1,0 +1,13 @@
+div.home-div {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.card-container {
+
+    height: fit-content;
+    width: fit-content;
+
+}

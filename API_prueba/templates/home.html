@@ -13,12 +13,17 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="../static/style.css">
+
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid justify-content-center">
-            <a class="navbar-brand" href="#">Inicio</a>
+            <a class="navbar-brand" href="#">
+                <img src="../Media/calidad-del-aire.png" alt="" width="32" height="32" class="d-inline-block align-text-top">
+                Inicio
+              </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -48,13 +53,38 @@
             </div>
         </div>
         <div class="container-fluid justify-content-end">
-            <button class="btn btn-outline-light me-2 " style="background-color: #e997a0; text-decoration-color: white; outline-color: #e997a0;" type="button">Log off</button>
+            <button class="btn btn-outline-light me-2 "
+                style="background-color: #e997a0; text-decoration-color: white; outline-color: #e997a0;"
+                type="button">Cerrar sesion</button>
         </div>
     </nav>
 
-    <div>
-        
+    <div class="home-div">
+        <div class="card-container">
+            <div class="card mb-3">
+                <img src="../Media/cielo.png" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Datos de sensores de la calidad del aire.</h5>
+                    <p class="card-text">Esta pagina esta hecha con el objetivo de filtrar datos enviados por los
+                        sensores de calidad del aire en Albacete.</p>
+                </div>
+            </div>
+            <div class="list-group" style="padding-top: 10px; width: auto;">
+                <a href="#" class="list-group-item list-group-item-action">Aviso</a>
+                <a href="#" class="list-group-item list-group-item-action">Medidas del aire</a>
+                <a href="#" class="list-group-item list-group-item-action">Alerta O3</a>
+                <a class="list-group-item list-group-item-action">Alerta No2</a>
+                <a class="list-group-item list-group-item-action">Alerta Pm2_5</a>
+                <a class="list-group-item list-group-item-action">Alerta Pm10</a>
+                <a class="list-group-item list-group-item-action">Media cada 8 horas</a>
+                <a class="list-group-item list-group-item-action">Media diaria</a>
+                <a class="list-group-item list-group-item-action">Media cada hora</a>
+                <a class="list-group-item list-group-item-action">Riesgos</a>
+                <a class="list-group-item list-group-item-action">Advertencias</a>
+            </div>
+        </div>
     </div>
+
 </body>
 
 </html>
