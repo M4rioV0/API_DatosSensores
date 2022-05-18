@@ -11,3 +11,16 @@ div.card-container {
     width: fit-content;
 
 }
+
+div.log-in-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12%;
+}
+
+div.sign-up{
+    height: fit-content;
+    width: fit-content;
+}
