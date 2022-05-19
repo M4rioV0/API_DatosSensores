@@ -12,7 +12,7 @@ div.card-container {
 
 }
 
-div.log-in-container {
+div.sign-up-container, div.sign-in-container {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@ div.log-in-container {
     padding: 12%;
 }
 
-div.sign-up{
+div.sign-up, div.sign-in{
     height: fit-content;
     width: fit-content;
 }
