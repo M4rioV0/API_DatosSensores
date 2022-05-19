@@ -24,16 +24,11 @@
                 <div class="row g-0" style="width: fit-content;">
                     <div class="col-md-8" style="width: fit-content;">
                         <div class="card-body">
-                            <h5 class="card-title">Regístrate</h5>
+                            <h5 class="card-title">Inicia sesión</h5>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Usuario</label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1"
                                     placeholder="Usuario">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Dirección de correo</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="name@example.com">
                             </div>
                             <div class="mb-3">
                                 <label for="inputPassword" class="form-label">Contraseña</label>
@@ -41,16 +36,29 @@
                                     <input type="password" class="form-control" id="inputPassword">
                                 </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="inputPassword" class="form-label">Repite la Contraseña</label>
-                                <div class="col-sm-10">
-                                    <input type="password" class="form-control" id="inputPassword">
-                                </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Recordar inicio de sesion.
+                                </label>
                             </div>
-                            <input class="btn btn-primary btn-outline-light" type="submit" value="Regístrate"
+                            <input class="btn btn-primary btn-outline-light" type="submit" value="Inicia sesión"
                                 style="border-color: #2ecfbc; background-color: #2ecfbc; text-decoration-color: white;">
-                            <label for="exampleFormControlInput1" class="form-label">Tienes ya una cuenta registrada <a
-                                    href="#">inicia sesión</a>.</label>
+                            <label for="exampleFormControlInput1" class="form-label">No tienes cuenta <a
+                                    href="#">registrate</a>.</label>
+                            <hr>
+                            <button type="button" class="btn btn-light btn-lg btn-block">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-google" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                                </svg>
+                                 Inicia sesión con google
+                            </button>
+                            <hr>
+                            <label for="exampleFormControlInput1" class="form-label"><a
+                                href="#">Te olvidaste de la Contraseña?</a></label>
                         </div>
                     </div>
                 </div>
