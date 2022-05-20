@@ -1,10 +1,11 @@
 from multiprocessing import context
 from re import A
 from django.db.models import Q, Count
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import redirect, render, get_object_or_404
 from rest_framework import generics
 from rest_framework.response import Response
 from .models import Advice
+from django.contrib.auth import logout
 
 #--METODO PARA VALIDAR LOS DATOS--#
 def is_valid_queryparam(param):
@@ -13,6 +14,11 @@ def is_valid_queryparam(param):
 #--VISTA DEL INICIO--#
 def HomeView(request):
     return render(request, "home.html")
+
+#--VISTA DE LOG OUT--#
+def LogOutUser(request):
+    logout(request)
+    return redirect('sign_in')
 
 #--QUERY DE LOS DATOS DE ADVICE--#
 

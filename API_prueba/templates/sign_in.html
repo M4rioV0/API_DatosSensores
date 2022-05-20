@@ -1,3 +1,5 @@
+{% load socialaccount %}
+{% providers_media_js %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,7 +49,7 @@
                             <label for="exampleFormControlInput1" class="form-label">No tienes cuenta <a
                                     href="#">registrate</a>.</label>
                             <hr>
-                            <form action="../accounts/google/login/?process=login">
+                            <form action="{% provider_login_url "google" %}">
                                 <button type="submit" class="btn btn-light btn-lg btn-block">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"

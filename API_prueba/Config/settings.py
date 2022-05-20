@@ -35,6 +35,7 @@ INSTALLED_APPS = [
 
     #apps
     'DatosSensores',
+    'templates',
 
     #django apps
     'django.contrib.admin',
@@ -53,6 +54,8 @@ INSTALLED_APPS = [
 ]
 
 SITE_ID = 1
+
+LOGIN_REDIRECT_URL = '/home/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -18,11 +18,15 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path,include
 from DatosSensores.views import HomeView
+from django.views.generic import TemplateView
+from DatosSensores import views
 
 urlpatterns = [
+    path('', TemplateView.as_view(template_name="../templates/sign_in.html"),name='sign_in'),
     path('home/',HomeView, name='home'),
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
+    path('logout_user', views.LogOutUser, name='logout'),
 ]
 
 if settings.DEBUG:
